@@ -7,8 +7,8 @@ title: University Physics Textbook
   <h2>Introductory Physics with Calculus Textbook</h2>
 </header>
 
-<div class="popup" onclick="myFunction()">Click me to toggle the popup!
-  <span class="popuptext" id="myPopup">A Simple Popup!</span>
+<div class="popup" onclick="myFunction()">here
+  <span class="popuptext" id="myPopup">Still in initial development. Check back soon!</span>
 </div>
 
 <script>
@@ -30,7 +30,13 @@ function myFunction() {
   </p>
   
   <p>
-    <b>Current version:</b> In initial stages of being written; nothing yet released. The first few chapters will be released soon!
+    <b>Current version:</b> <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
   <p>
     
   <p>
