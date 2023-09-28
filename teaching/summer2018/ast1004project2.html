@@ -7,98 +7,136 @@ title: Project 2
   <h2>AST1002 Spring 2018 Project 2</h2>
   <h3>Measuring Hubble's Constant</h3>
   <br>
-  <h3>Due Date: <font color="red">Tuesday, August 7</font></h3>
+  <h3>Due Date:
+    <font color="red">Tuesday, August 7</font>
+  </h3>
 </header>
 
 <article>
-  <h3><center>Project Overview</center></h3>
-  
+  <h3>
+    <center>Project Overview</center>
+  </h3>
+
   <p>You will be given a list of galaxies that you will include in your description of Hubble's law. For each galaxy,you will
-  need to find the <b>luminosity distance</b> and the <b>radial velocity</b>. You can find this information on the 
-  <a target="_blank" href="https://ned.ipac.caltech.edu">NASA/IPAC Extragalactic Database (NED)</a>. On NED, you will sarch
-  by object name (first column, first row). The page of results for each object will come in an index. Click on the link for
-  "Basic Data" to find the radial velocity:
-    
+    need to find the
+    <b>luminosity distance</b>
+    and the
+    <b>radial velocity</b>. You can find this information on the
+    <a target="_blank" href="https://ned.ipac.caltech.edu">NASA/IPAC Extragalactic Database (NED)</a>. On NED, you will sarch
+    by object name (first column, first row). The page of results for each object will come in an index. Click on the link for
+                  "Basic Data" to find the radial velocity:
+
     <br>
     <br>
-    
-    <img src="http://www.blazartheory.com/figs/basic_data.png" alt="Basic Data" style="width:1000px">
-    
+
+    <img
+      src="{{ 'assets/img/basic_data.png' | relative_url }}"
+      alt="Basic Data"
+      style="width:1000px">
+
     <br>
     <br>
-    
+
     The radial velocity shown in the example above is 3901 km/s. The "+/- 10 km/s" represents the error in the measurement,
     which we won't need to know for this project. Going back to the index, click on the link for "Quantities Derived from
-    Redshift" to find the luminosity distance:
-    
+                    Redshift" to find the luminosity distance:
+
     <br>
     <br>
-    
-    <img src="http://www.blazartheory.com/figs/lum_dist.png" alt="Luminosity Distance" style="width:1000px">
-    
+
+    <img
+      src="{{ 'assets/img/lum_dist.png' | relative_url }}"
+      alt="Luminosity Distance"
+      style="width:1000px">
+
     <br>
     <br>
-    
+
     The luminosity distance in the example above is 51.1 Mpc (megaparsecs, with 1 Mpc = 1 million pc). These are the units
     you want to use: km/s for radial velocity, and Mpc for distance.
   </p>
-  
-  <p>What you will be doing with this data is plotting it on a radial velocity vs. distance graph. (<b>For instructions on 
-    how to plot using Excel, click on <a target="_blank" href="http://www.blazartheory.com/files/How_to_Use_Excel.pdf">this link</a></b>.) 
-    With the data plotted, you can find the equation for the line. The data should represent a straight line, which means 
-    that the equation will be y = mx, where y is the vertical axis (the radial velocity), x is the horizontal axis (the 
-    distance), and m is the slope of the line. If we call the slope H, then we find the equation v = Hd, which is known as 
-    Hubble's law. Your job will be to use the data plot to estimate the Hubble constant, H, which is the slope of the data 
-    plot.
-  </p>
-  
+
+  <p>What you will be doing with this data is plotting it on a radial velocity vs. distance graph. (<b>For instructions on
+      how to plot using Excel, click on
+      <a target="_blank" href="{{ 'assets/files/How_to_Use_Excel.pdf' | relative_url }}">this link</a>
+    </b>.)
+    With the data plotted, you can find the equation for the line. The data should represent a straight line, which means
+                    that the equation will be y = mx, where y is the vertical axis (the radial velocity), x is the horizontal axis (the
+                    distance), and m is the slope of the line. If we call the slope H, then we find the equation v = Hd, which is known as
+                    Hubble's law. Your job will be to use the data plot to estimate the Hubble constant, H, which is the slope of the data
+                    plot.</p>
+
   <p>What you will turn in will be the excel file that indicates the Hubble constant.</p>
-  
+
   <br>
-  
-  <h3><center>Student Data Sets</center></h3>
-  
-  <center><table style="width:40%">
-    <tr>
-      <td>Campos, Anthony</td>
-      <td><a target="_blank" href="http://www.blazartheory.com/files/summer2018/Campos_Anthony_Proj_2.pdf">Data Set</a></td>
-    </tr>
-    <tr>
-      <td>Dupont, Chante</td>
-      <td><a target="_blank" href="http://www.blazartheory.com/files/summer2018/Dupont_Chante_Proj_2.pdf">Data Set</a></td>
-    </tr>
-    <tr>
-      <td>Herrera, Brian</td>
-      <td><a target="_blank" href="http://www.blazartheory.com/files/summer2018/Herrera_Brian_Proj_2.pdf">Data Set</a></td>
-    </tr>
-    <tr>
-      <td>Khabbazeh, Ahmad</td>
-      <td><a target="_blank" href="http://www.blazartheory.com/files/summer2018/Khabbazeh_Ahmad_Proj_2.pdf">Data Set</a></td>
-    </tr>
-    <tr>
-      <td>La Ciacera, Giuseppe</td>
-      <td><a target="_blank" href="http://www.blazartheory.com/files/summer2018/La_Ciacera_Giuseppe_Proj_2.pdf">Data Set</a></td>
-    </tr>
-    <tr>
-      <td>Masiak, Anthony</td>
-      <td><a target="_blank" href="http://www.blazartheory.com/files/summer2018/Masiak_Anthony_Proj_2.pdf">Data Set</a></td>
-    </tr>
-    <tr>
-      <td>McMahon, Marijayne</td>
-      <td><a target="_blank" href="http://www.blazartheory.com/files/summer2018/McMahon_Marijayne_Proj_2.pdf">Data Set</a></td>
-    </tr>
-    <tr>
-      <td>Miuccio, Devon</td>
-      <td><a target="_blank" href="http://www.blazartheory.com/files/summer2018/Miuccio_Devon_Proj_2.pdf">Data Set</a></td>
-    </tr>
-    <tr>
-      <td>Thomas, Tyler</td>
-      <td><a target="_blank" href="http://www.blazartheory.com/files/summer2018/Thomas_Tyler_Proj_2.pdf">Data Set</a></td>
-    </tr>
-    <tr>
-      <td>Toro, Melanie</td>
-      <td><a target="_blank" href="http://www.blazartheory.com/files/summer2018/Toro_Melanie_Proj_2.pdf">Data Set</a></td>
-    </tr>
-  </table></center>
-  
+
+  <h3>
+    <center>Student Data Sets</center>
+  </h3>
+
+  <center>
+    <table style="width:40%">
+      <tr>
+        <td>Campos, Anthony</td>
+        <td>
+          <a target="_blank" href="{{ 'assets/files/summer2018/Campos_Anthony_Proj_2.pdf' | relative_url }}">Data Set</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Dupont, Chante</td>
+        <td>
+          <a target="_blank" href="{{ 'assets/files/summer2018/Dupont_Chante_Proj_2.pdf' | relative_url }}">Data Set</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Herrera, Brian</td>
+        <td>
+          <a target="_blank" href="{{ 'assets/files/summer2018/Herrera_Brian_Proj_2.pdf' | relative_url }}">Data Set</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Khabbazeh, Ahmad</td>
+        <td>
+          <a target="_blank" href="{{ 'assets/files/summer2018/Khabbazeh_Ahmad_Proj_2.pdf' | relative_url }}">Data Set</a>
+        </td>
+      </tr>
+      <tr>
+        <td>La Ciacera, Giuseppe</td>
+        <td>
+          <a target="_blank" href="{{ 'assets/files/summer2018/La_Ciacera_Giuseppe_Proj_2.pdf' | relative_url }}">Data Set</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Masiak, Anthony</td>
+        <td>
+          <a target="_blank" href="{{ 'assets/files/summer2018/Masiak_Anthony_Proj_2.pdf' | relative_url }}">Data Set</a>
+        </td>
+      </tr>
+      <tr>
+        <td>McMahon, Marijayne</td>
+        <td>
+          <a target="_blank" href="{{ 'assets/files/summer2018/McMahon_Marijayne_Proj_2.pdf' | relative_url }}">Data Set</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Miuccio, Devon</td>
+        <td>
+          <a target="_blank" href="{{ 'assets/files/summer2018/Miuccio_Devon_Proj_2.pdf' | relative_url }}">Data Set</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Thomas, Tyler</td>
+        <td>
+          <a target="_blank" href="{{ 'assets/files/summer2018/Thomas_Tyler_Proj_2.pdf' | relative_url }}">Data Set</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Toro, Melanie</td>
+        <td>
+          <a target="_blank" href="{{ 'assets/files/summer2018/Toro_Melanie_Proj_2.pdf' | relative_url }}">Data Set</a>
+        </td>
+      </tr>
+    </table>
+  </center>
+
 </article>

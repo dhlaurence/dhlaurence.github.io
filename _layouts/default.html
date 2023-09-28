@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/assets/css/style.css" />
-</head>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  </head>
 
-<body>
+  <body>
+    <nav class="topnav">
+      <a
+        {% if page.title == 'Home' %}
+        class="active"
+        {% endif %}
+        href="/">Home</a>
+      <a
+        {% if page.title == 'About' %}
+        class="active"
+        {% endif %}
+        href="/about.html">About</a>
+      <a
+        {% if page.title == 'Teaching' %}
+        class="active"
+        {% endif %}
+        href="/teaching.html">Teaching</a>
+      <a
+        {% if page.title == 'Notes' %}
+        class="active"
+        {% endif %}
+        href="/notes.html">Notes</a>
+      <a
+        {% if page.title == 'Research' %}
+        class="active"
+        {% endif %}
+        href="/research.html">Research</a>
+      <a target="_blank" href="http://inspirehep.net/author/profile/D.Laurence.1">Publications</a>
+    </nav>
 
-  <div class="topnav">
-    <a {% if page.title == 'Home' %} class="active" {% endif %} href="/">Home</a>
-    <a {% if page.title == 'About' %} class="active" {% endif %} href="/about.html">About</a>
-    <a {% if page.title == 'Teaching' %} class="active" {% endif %} href="/teaching.html">Teaching</a>
-    <a {% if page.title == 'Notes' %} class="active" {% endif %} href="/notes.html">Notes</a>
-    <a {% if page.title == 'Research' %} class="active" {% endif %} href="/research.html">Research</a>
-    <a target="_blank" href="http://inspirehep.net/author/profile/D.Laurence.1">Publications</a>
-  </div>
+    <main>
+      {{ content }}
+    </main>
 
-  {{ content }}
+    <footer>
+      Copyright &copy {{ 'now' | date: "%Y" }} Douglas H. Laurence
+    </footer>
+  </body>
 
-  <footer>Copyright &copy 2020 Douglas H. Laurence</footer>
-</body>
 </html>
